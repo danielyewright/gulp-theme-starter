@@ -1,4 +1,4 @@
-## Gulp boilerplate
+## Gulp Theme Starter
 
 A front-end workflow for creating Bootstrap themes using Gulp
 
@@ -6,7 +6,7 @@ A front-end workflow for creating Bootstrap themes using Gulp
 
 Clone the repo:
 ```
-git clone https://gitlab.com/danielyewright/gulp-theme-starter.git
+git clone https://github.com/danielyewright/gulp-theme-starter.git
 ```
 
 Install dependencies:
