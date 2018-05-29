@@ -126,7 +126,8 @@ gulp.task('browser-sync', () => {
     server: {
       baseDir: dir.build
     },
-    open: false
+    open: false,
+    notify: false
   });
 });
 
@@ -207,6 +208,7 @@ gulp.task('build', ['sass', 'images', 'scripts', 'fonts', 'copy-sass', 'copy-css
 gulp.task('default', ['sass', 'scripts', 'images', 'fonts', 'copy-sass', 'copy-css', 'copy-files', 'clean', 'browser-sync'], () => {
   // add browserSync.reload to the tasks array to make
   // all browsers reload after tasks are complete.
+  gulp.watch(css.watch, ['sass']);
   gulp.watch(css.src, ['css-watch']);
   gulp.watch(js.src, ['js-watch']);
   gulp.watch(dir.src + '*.html', ['html-watch']);
