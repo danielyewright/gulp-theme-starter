@@ -15,7 +15,12 @@ Install dependencies:
 
 Run the default task:
 ```
-gulp
+yarn start
+```
+
+Or if you're using NPM:
+```
+npm start
 ```
 
 ### Usage
@@ -27,8 +32,8 @@ The gulpfile has the following tasks:
 - `zip`
 - `delete`
 
-Use `gulp` to run the default task and navigate to [http://localhost:3000](http://localhost:3000) to view the project. As you modify files, the browser will automatically refresh to reflect the changes.
+Use `yarn start` (or `npm start` if using npm) to run the default task and navigate to [http://localhost:3000](http://localhost:3000) to view the project. As you modify files, the browser will automatically refresh to reflect the changes.
 
 ### Packaging/Deployment
 
-`gulp build` will create a zip file containing all files in the `dist` directory. The zip file is named based on the project name and version in `package.json`.
+`yarn build` (or `npm run build` if using npm) will create a zip file containing all files in the `dist` directory. The zip file is named based on the project name and version in `package.json`.
